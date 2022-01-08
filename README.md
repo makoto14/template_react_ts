@@ -1,2 +1,11 @@
-# template_react_ts
-React/Typescript/mui/emotion
+# Build
+
+```bash
+yarn build
+```
+
+# Start servers
+
+```bash
+yarn start
+```
