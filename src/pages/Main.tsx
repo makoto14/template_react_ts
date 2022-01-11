@@ -14,7 +14,7 @@ const Main: React.VFC = () => {
   };
 
   const add = () => {
-    dispatch(setTestNum(testNum + 10));
+    dispatch(setTestNum(testNum + 111));
   };
 
   return (
