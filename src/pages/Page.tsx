@@ -4,22 +4,22 @@ import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { getTestNum } from "../store/testStore";
 
-const Sub: React.VFC = () => {
+const Page: React.VFC = () => {
   const navigate = useNavigate();
   const testNum: number = useSelector(getTestNum);
 
   const hundleMain = () => {
     navigate("/main");
   };
+
   return (
     <Box>
       <Button variant="text" color="primary" onClick={hundleMain}>
         to Main page
       </Button>
-
       {testNum}
     </Box>
   );
 };
 
-export default Sub;
+export default Page;

@@ -9,8 +9,8 @@ const Main: React.VFC = () => {
   const dispatch = useDispatch();
   const testNum: number = useSelector(getTestNum);
 
-  const hundleSub = () => {
-    navigate("/sub");
+  const hundlePage = () => {
+    navigate("/page");
   };
 
   const add = () => {
@@ -19,7 +19,7 @@ const Main: React.VFC = () => {
 
   return (
     <Box>
-      <Button variant="text" color="primary" onClick={hundleSub}>
+      <Button variant="text" color="primary" onClick={hundlePage}>
         to Sub page
       </Button>
       <Button variant="text" color="primary" onClick={add}>

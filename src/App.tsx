@@ -3,7 +3,7 @@ import React from "react";
 import { Provider } from "react-redux";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Main from "./pages/Main";
-import Sub from "./pages/Sub";
+import Page from "./pages/Page";
 import { store } from "./store/store";
 
 const App: React.VFC = () => {
@@ -19,7 +19,7 @@ const App: React.VFC = () => {
         <BrowserRouter>
           <Routes>
             <Route path={`/main`} element={<Main />} />
-            <Route path={`/Sub`} element={<Sub />} />
+            <Route path={`/page`} element={<Page />} />
           </Routes>
         </BrowserRouter>
       </Provider>
