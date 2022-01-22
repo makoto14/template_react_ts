@@ -7,7 +7,6 @@ module.exports = {
   mode: "development",
   output: {
     filename: "./app.js",
-    // publicPath: path.resolve(__dirname, "dist"),
     publicPath: "/",
   },
   devtool: "source-map",
@@ -67,7 +66,7 @@ module.exports = {
   devServer: {
     static: {
       directory: path.resolve(__dirname, "./dist"),
-      publicPath: ["/main", "/sub"],
+      publicPath: ["", "/**/*"],
       watch: true,
       serveIndex: true,
     },
