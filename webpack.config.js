@@ -66,7 +66,8 @@ module.exports = {
   devServer: {
     static: {
       directory: path.resolve(__dirname, "./dist"),
-      publicPath: ["", "/**/*"],
+      // publicPath: ["", "/**/*"],
+      publicPath: ["/main", "/sub"],
       watch: true,
       serveIndex: true,
     },
