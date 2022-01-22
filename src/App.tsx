@@ -3,7 +3,7 @@ import React from "react";
 import { Provider } from "react-redux";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Main from "./pages/Main";
-import Sub from "./pages/sub";
+import Sub from "./pages/Sub";
 import { store } from "./store/store";
 
 const App: React.VFC = () => {

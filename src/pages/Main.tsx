@@ -14,7 +14,7 @@ const Main: React.VFC = () => {
   };
 
   const add = () => {
-    dispatch(setTestNum(testNum + 111));
+    dispatch(setTestNum(testNum + 2));
   };
 
   return (
@@ -22,11 +22,9 @@ const Main: React.VFC = () => {
       <Button variant="text" color="primary" onClick={hundleSub}>
         to Sub page
       </Button>
-
       <Button variant="text" color="primary" onClick={add}>
         add
       </Button>
-
       {testNum}
     </Box>
   );
