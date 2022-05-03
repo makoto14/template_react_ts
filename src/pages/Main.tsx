@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { getTestNum, setTestNum } from "../store/testStore";
 
-const Main: React.VFC = () => {
+const Main: React.FC = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const testNum: number = useSelector(getTestNum);

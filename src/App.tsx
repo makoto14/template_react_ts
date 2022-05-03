@@ -6,7 +6,7 @@ import Main from "./pages/Main";
 import Page from "./pages/Page";
 import { store } from "./store/store";
 
-const App: React.VFC = () => {
+const App: React.FC = () => {
   return (
     <div
       css={css`
