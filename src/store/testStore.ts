@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { RootState } from "./store";
 
 type Test = {
@@ -8,16 +8,16 @@ type Test = {
 
 const initialState: Test = {
   testStr: "",
-  testNum: 0,
+  testNum: 1,
 };
 export const testSlice = createSlice({
   name: "test",
   initialState,
   reducers: {
-    setTestStr: (state, action) => {
+    setTestStr: (state: RootState, action: PayloadAction) => {
       state.testStr = action.payload;
     },
-    setTestNum: (state, action) => {
+    setTestNum: (state: RootState, action: PayloadAction) => {
       state.testNum = action.payload;
     },
   },
